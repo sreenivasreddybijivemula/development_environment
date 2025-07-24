@@ -25,4 +25,4 @@ renamed_columns['Team']=np.where(
 emp_csv_out = renamed_columns.to_csv(index=False)
 s3.put_object(Bucket='cloudlearn-poc-landing',Key='employee_data_out/emp_basic_trans_out_data.csv',Body=emp_csv_out)
 
-print('succesfully completed the load')
+print('succesfully completed load to AWS')
